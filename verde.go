@@ -1,7 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main(){
-	fmt.Println("Hello World")
+	var min,max int;
+	fmt.Print("MIN:")
+	fmt.Scan(&min)
+	fmt.Print("MAX:")
+	fmt.Scan(&max)
+	for ;max!=min;{
+		if max>min{
+			max=max-min
+		}else{
+			min=min-max
+		}
+	}
+	fmt.Print("ANSWER:",min)
 }
